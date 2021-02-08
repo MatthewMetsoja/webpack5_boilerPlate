@@ -33,7 +33,8 @@ module.exports = merge(common, {
     },
     module: {
 
-        rules: [{
+        rules: [
+            {
                 test: /\.scss$/i,
                 use: [
                     MiniCssExtractPlugin.loader, //3. Extract css into files

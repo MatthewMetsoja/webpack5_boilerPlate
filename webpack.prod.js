@@ -21,6 +21,7 @@ module.exports = merge(common, {
             new TerserPlugin(), // this is needed to compile the js as the css minifier overrides the default setting
             new HtmlWebpackPlugin({
                 template: "./src/template.html",
+                inject: 'body',
                 minify: {
                     removeAttributeQuotes: true,
                     collapseWhitespace: true,

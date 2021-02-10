@@ -1,4 +1,5 @@
 import "./main.scss";
+import "./test.css";
 
 
 const test = ()=>{

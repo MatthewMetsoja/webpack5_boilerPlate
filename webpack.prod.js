@@ -1,11 +1,7 @@
 const path = require("path");
 const common = require("./webpack.common");
-const {
-    merge
-} = require("webpack-merge");
-const {
-    CleanWebpackPlugin
-} = require("clean-webpack-plugin");
+const {merge} = require("webpack-merge");
+const {CleanWebpackPlugin} = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const TerserPlugin = require("terser-webpack-plugin"); // this one is part of node modules so no need to install.
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -36,10 +32,11 @@ module.exports = merge(common, {
 
         rules: [
             {
-                test: /\.scss$/i,
+                test: /\.(s[ac]|c)ss$/i,
                 use: [
                     MiniCssExtractPlugin.loader, //3. Extract css into files
                     'css-loader', //2. Turns css into commonjs
+                    "postcss-loader", // adds prefixes
                     "sass-loader" //1. Turns sass into css
                 ],
             },

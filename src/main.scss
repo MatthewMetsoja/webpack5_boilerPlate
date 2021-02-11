@@ -1,1 +1,45 @@
 @import "bootstrap";
+
+
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.header{
+    height: 15vh;
+    background-color: red;
+}
+
+.links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    color: white;
+}
+
+.content{
+    flex-grow:1;
+    display:flex;
+    justify-content: space-between;
+}
+
+.button{
+    align-self: center;
+}
+
+.sidebar{
+    background-color: green;
+    width: 15vw;
+
+}
+
+.footer{
+    height: 15vh;
+    background-color: blue;
+    transform: translateY(100%);
+}

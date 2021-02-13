@@ -1,6 +1,5 @@
 import "./main.scss";
 import "./test.css";
-import "./app/m1.json";
 
 // typical import
 import gsap from "gsap";

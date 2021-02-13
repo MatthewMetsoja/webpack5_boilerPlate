@@ -1,6 +1,7 @@
 const path = require("path");
 const loader = require("sass-loader");
 
+
 module.exports = {
   entry: {
     main:"./src/index.js",
@@ -12,7 +13,13 @@ module.exports = {
     contentBase: path.join(__dirname, 'dist'),
         port: 5050,
         open: true,
-        hot: true,
+        // hot: true,
+
+        // before(app, server) {
+          // This step is curcial. DevServer is needed to send reload message to opened page.
+          // Without this step, the update of HtmlWebpackHotPlugin will be omitted and you will need to refresh the page manually.
+          // htmlHotPlugin.setDevServer(server)
+        // },
 
         // openPage: '/test.html' // use to open a specific page with dev server
   },
@@ -27,7 +34,7 @@ module.exports = {
           use: ["html-loader"]
       },
       {
-        test: /\.svg|png|jpg|gif$/,
+        test: /\.svg|png|jpg|gif|json$/,
         use: {
           loader: "file-loader",
           options: {

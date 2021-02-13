@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,19 +9,32 @@
     <!-- IE10/11 support for bootstrap if required //This will need to be excluded from compile bundle -->
     <!-- <script nomodule>window.MSInputMethodContext && document.documentMode && document.write('<link rel="stylesheet" href="/css/bootstrap-ie11.min.css"><script src="https://cdn.jsdelivr.net/gh/nuxodin/ie11CustomProperties@4.1.0/ie11CustomProperties.min.js"><\/script><script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=default,Array.prototype.includes,Array.prototype.find,Number.parseFloat%2CNumber.parse"><\/script>');</script> -->
 </head>
+
 <body>
-  <div class="header">
-      <div class="links">
-          <div class="link">Link 1</div>
-          <div class="link">Link 2</div>
-          <div class="link">Link 3</div>
-      </div> 
-  </div>
-  <div class="content">
-      <div class="sidebar left"></div>
-      <button class="button">Reverse!</button>
-      <div class="sidebar right"></div>
-  </div>
-  <div class="footer"></div>
+    <div class="header">
+        <div class="links">
+            <div class="link">Link 1</div>
+            <div class="link">Link 2</div>
+            <div class="link">Link 3</div>
+        </div>
+       
+    </div>
+        
+    <div class="content">
+        <div class="sidebar left"></div>
+        <div>
+            <lottie-player src="./assets/m3.json" background="transparent" speed="1" style="width: 300px; height: 300px;"
+            loop controls autoplay></lottie-player>
+
+        <lottie-player src="https://assets9.lottiefiles.com/datafiles/MUp3wlMDGtoK5FK/data.json"
+            background="transparent" speed="1" style="width: 300px; height: 300px;" loop controls autoplay>
+        </lottie-player>
+
+    </div>
+        <button class="button">Reverse!</button>
+        <div class="sidebar right"></div>
+    </div>
+    <div class="footer"></div>
 </body>
+
 </html>

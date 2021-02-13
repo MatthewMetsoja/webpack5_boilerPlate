@@ -1,5 +1,6 @@
 import "./main.scss";
 import "./test.css";
+import "./app/m1.json";
 
 // typical import
 import gsap from "gsap";
@@ -52,3 +53,8 @@ button.addEventListener('click', ()=>{
 
     timeline.reverse(); // here is how we play a timeline in reverse.
 });
+
+const player = document.querySelector('lottie-player');
+player.load('https://assets3.lottiefiles.com/packages/lf20_UJNc2t.json');
+
+if(module.hot){module.hot.accept();} 

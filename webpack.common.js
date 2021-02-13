@@ -7,9 +7,12 @@ module.exports = {
     vendor: "./src/vendor.js"
   },
   devServer: {
+   
+   
     contentBase: path.join(__dirname, 'dist'),
-        port: 3000,
+        port: 5050,
         open: true,
+        hot: true,
 
         // openPage: '/test.html' // use to open a specific page with dev server
   },
